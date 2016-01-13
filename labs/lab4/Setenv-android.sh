@@ -102,7 +102,7 @@ fi
 # https://android.googlesource.com/platform/ndk/+/ics-mr0/docs/STANDALONE-TOOLCHAIN.html
 
 ANDROID_TOOLCHAIN=""
-for host in "linux-x86_64" "linux-x86" "darwin-x86_64" "darwin-x86"
+for host in "linux-x86_64" "linux-x86" "darwin-x86_64" "darwin-x86" "windows-x86_64"
 do
   if [ -d "$ANDROID_NDK_ROOT/toolchains/$_ANDROID_EABI/prebuilt/$host/bin" ]; then
     ANDROID_TOOLCHAIN="$ANDROID_NDK_ROOT/toolchains/$_ANDROID_EABI/prebuilt/$host/bin"
@@ -118,12 +118,12 @@ if [ -z "$ANDROID_TOOLCHAIN" ] || [ ! -d "$ANDROID_TOOLCHAIN" ]; then
 fi
 
 case $_ANDROID_ARCH in
-	arch-arm)	  
+	arch-arm)
       ANDROID_TOOLS="arm-linux-androideabi-gcc arm-linux-androideabi-ranlib arm-linux-androideabi-ld"
 	  ;;
-	arch-x86)	  
+	arch-x86)
       ANDROID_TOOLS="i686-linux-android-gcc i686-linux-android-ranlib i686-linux-android-ld"
-	  ;;	  
+	  ;;
 	*)
 	  echo "ERROR ERROR ERROR"
 	  ;;
