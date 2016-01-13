@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cipher">
+        <item >AES-128</item>
+        <item >AES-256</item>
+    </string-array>
+    <string-array name="mode">
+        <item >CBC</item>
+    </string-array>
+    <string-array name="blocksize">
+        <item >16</item>
+        <item >64</item>
+        <item >256</item>
+        <item >1024</item>
+        <item >8192</item>
+    </string-array>
+    <string-array name="keysize">
+        <item >1024</item>
+        <item >2048</item>
+    </string-array>
+    <string-array name="file">
+        <item >mpeg4.3gp - 1.66MB</item>
+    </string-array>
+    <string-array name="implementation">
+        <item >javax.crypto(slow)</item>
+        <item >OpenSSL(fast)</item>
+    </string-array>
+    <string-array name="one_value_array">
+        <item >0</item>
+    </string-array>
+    <string-array name="two_value_array">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="five_value_array">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
+    
+</resources>

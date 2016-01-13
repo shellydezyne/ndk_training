@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bkground"
+    android:layout_centerVertical="true"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/encryptionButton"
+        android:layout_width="350dip"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/btn_format"
+        android:text="@string/encrypt"
+        android:textColor="@color/text_color"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="350dip"
+        android:layout_height="80dip"
+        android:layout_below="@id/encryptionButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/btn_format"
+        android:text="@string/settings"
+        android:textColor="@color/text_color"
+        android:textSize="30sp"
+        android:onClick="settingsMenuOpen"
+        android:textStyle="bold"/>/>
+
+    <TextView
+        android:id="@+id/encryptionIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/bg"
+        android:text="@string/app_name"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+

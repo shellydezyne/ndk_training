@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--                  <ListPreference
+                    android:title="Cipher"
+                    android:summary="Pick your Cipher (AES-128,AES-256,...)"
+                    android:key="cipher"
+                    android:defaultValue="0"
+                    android:entries="@array/cipher"
+                    android:entryValues="@array/two_value_array"
+                    />
+-->
+<!--                  <ListPreference
+                    android:title="Mode"
+                    android:summary="Block cipher mode of operation (CBC,...)"
+                    android:key="mode"
+                    android:defaultValue="0"
+                    android:entries="@array/mode"
+                    android:entryValues="@array/one_value_array"
+                    />
+-->
+<ListPreference
+    android:title="Block Size"
+    android:summary="Block Size (in bytes) that is feed to cipher at a time"
+    android:key="blocksize"
+    android:defaultValue="0"
+    android:entries="@array/blocksize"
+    android:entryValues="@array/five_value_array"
+    />
+<!-- 				<ListPreference
+                    android:title="Key Size"
+                    android:summary="Key Size (in bytes) used for Key Generation"
+                    android:key="keysize"
+                    android:defaultValue="0"
+                    android:entries="@array/keysize"
+                    android:entryValues="@array/two_value_array"
+                    />
+-->
+<!--            <ListPreference
+                    android:title="File"
+                    android:summary="Pick a file to encrypt/decrypt"
+                    android:key="file"
+                    android:defaultValue="0"
+                    android:entries="@array/file"
+                    android:entryValues="@array/one_value_array"
+                    />
+-->
+<ListPreference
+    android:title="Implementation"
+    android:summary="Pick an implementation (java, c)"
+    android:key="implementation"
+    android:defaultValue="0"
+    android:entries="@array/implementation"
+    android:entryValues="@array/two_value_array"
+    />
+</PreferenceScreen>

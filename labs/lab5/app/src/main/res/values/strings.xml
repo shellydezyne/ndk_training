@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ndktest</string>
+    <string name="settings">Settings</string>
+    <string name="set_preferences">Preferences</string>
+    <string name="workload">Run Benchmarks</string>
+    <string name="encrypt">Encrypt</string>
+
+</resources>
