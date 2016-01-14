@@ -13,15 +13,15 @@ android {
         versionCode 1
         versionName "1.0"
         ndk {
-            moduleName ""
+            moduleName "HelloJNI"
             ldLibs "log"
             stl "gnustl_static"
             //cFlags "-std=c++11 -fexceptions"
-            //cppFLAGS "-I${openssl_path}/include"
             //cFlags "-I${openssl_path}/include"
         }
     }
     sourceSets.main {
+        jni.srcDirs = []
         jniLibs.srcDir 'src/main/libs' //set .so files location to libs
     }
 
@@ -35,7 +35,15 @@ android {
                 //versionCode 1
             }
         }
+        x86 {
+        ndk{
+              abiFilter "x86"
+        }
+        }
+        fat
     }
+
+    project.ext.versionCodes = ['armeabi-v7a':1,'x86':2]
     buildTypes {
         release {
             minifyEnabled false

@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 #LOCAL_CPP_FEATURES += rtti
 #LOCAL_CPPFLAGS += -frtti
+LOCAL_CFLAGS=-g
 LOCAL_MODULE    := HelloJNI
 #LOCAL_CPPFLAGS := -I/Users/dheerajkaushik/Projects/ndktest2_prebuilt_dynamic_final/openssl/include
 

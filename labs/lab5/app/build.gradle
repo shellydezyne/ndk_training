@@ -11,13 +11,13 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.example.dheerajkaushik.ndktest2_prebuilt_dynamic"
+        applicationId "com.example.dheerajkaushik.ndktest"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         ndk {
-            moduleName ""
+            moduleName "HelloJNI"
             ldLibs "log"
             stl "gnustl_static"
             //cFlags "-std=c++11 -fexceptions"
@@ -46,9 +46,21 @@ android {
         arm{
             ndk{
                 abiFilter "armeabi-v7a"
-                //versionCode 1
+                versionCode 1
             }
         }
+        /*x86{
+            ndk{
+                abiFilter "x86"
+                versionCode 1
+            }
+        }
+        x86_64{
+            ndk{
+                abiFilter "x86_64"
+                versionCode 1
+            }
+        }*/
     }
     buildTypes {
         release {
@@ -56,6 +68,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
+            debuggable true
             jniDebuggable true
         }
     }

@@ -1,0 +1,5 @@
+set solib-search-path ./obj/local/armeabi
+source /Applications/android-ndk-r10e/prebuilt/common/gdb/common.setup
+directory /Applications/android-ndk-r10e/platforms/android-21/arch-arm/usr/include /Applications/android-ndk-r10e/sources/cxx-stl/system/include jni/../../../.././openssl/include
+file ./obj/local/armeabi/app_process
+target remote :5039

@@ -1,4 +1,7 @@
 Follow the instructions at
+
+http://developer.android.com/ndk/guides/standalone_toolchain.html
+
 https://wiki.openssl.org/index.php/Android
 $ chmod a+x setenv-android.sh
 $ . ./setenv-android.sh
