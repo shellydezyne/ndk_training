@@ -38,9 +38,13 @@ model {
         release {
             minifyEnabled = false
             proguardFiles.add(file('proguard-rules.pro'))
-            ndk.with {
+            ndk.with{
                 debuggable = true
             }
+        }
+        debug {
+            debuggable = true
+
         }
     }
 

@@ -9,5 +9,5 @@
 JNIEXPORT jstring JNICALL Java_com_example_dheerajkaushik_ndktest_MainActivity_HelloJNI
   (JNIEnv *env, jobject jobj)
 {
-  (*env)->NewStringUTF(env,"Hello from jni");
+  return (*env)->NewStringUTF(env,"Hello from jni");
 }

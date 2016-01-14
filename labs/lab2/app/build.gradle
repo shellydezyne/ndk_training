@@ -67,9 +67,9 @@ model {
             }
             jniLibs {
                 dependencies {
-                    library file("lib/x86/prebuilt.so") abi "x86"
-                    library file("lib/armeabi-v7a/prebuilt.so") abi "armeabi-v7a"
-                    library file("lib/mips/prebuilt.so") abi "mips"
+                    //library file("lib/x86/prebuilt.so") abi "x86"
+                    //library file("lib/armeabi-v7a/prebuilt.so") abi "armeabi-v7a"
+                    //library file("lib/mips/prebuilt.so") abi "mips"
                 }
             }
         }
